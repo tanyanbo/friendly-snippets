@@ -154,7 +154,7 @@
         "description": "For-Await-Of Loop"
     },
     "Function Statement": {
-        "prefix": "function",
+        "prefix": "fn",
         "body": ["function ${1:name}(${2:params}:${3:type}) {", "\t$0", "}"],
         "description": "Function Statement"
     },
