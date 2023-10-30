@@ -29,7 +29,7 @@
     },
     "reactFunctionComponent": {
         "prefix": "rfc",
-        "body": "interface ${TM_DIRECTORY/^.+\\/(.*)$/$1/}Props {}\n\nexport const ${TM_DIRECTORY/^.+\\/(.*)$/$1/} = ({}: ${TM_DIRECTORY/^.+\\/(.*)$/$1/}Props) => {\n\treturn (\n\t\t<div>\n\t\t\t${TM_DIRECTORY/^.+\\/(.*)$/$1/}\n\t\t</div>\n\t)\n}",
+        "body": "interface ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Props {}\n\nexport const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = ({}: ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Props) => {\n\treturn (\n\t\t<div>\n\t\t\t${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}\n\t\t</div>\n\t)\n}",
         "description": "Creates a React functional component without PropTypes"
     },
     "reactFunctionComponentWithEmotion": {
